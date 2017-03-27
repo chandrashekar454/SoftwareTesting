@@ -9,10 +9,11 @@ import org.openqa.selenium.interactions.Actions;
 
 public class KeyDown {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		// TODO Auto-generated method stub
 
-System.setProperty("webdriver.gecko.driver","C://geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","C://geckodriver.exe");
 		
 		WebDriver driver=new FirefoxDriver();
 		driver.get("http://stackoverflow.com/questions/tagged/java");
@@ -22,6 +23,6 @@ System.setProperty("webdriver.gecko.driver","C://geckodriver.exe");
 		abc.keyDown(Keys.SHIFT).moveToElement(s).sendKeys("chandhu").build().perform();
 		abc.contextClick(s).build().perform();
 		
-				}
+	}
 
 }
